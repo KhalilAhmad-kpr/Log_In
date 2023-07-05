@@ -1,0 +1,125 @@
+body{
+	height: 100vh;
+	width: 100vw;
+	background: aliceblue;
+	background: url(../imgs/bg.jpg) no-repeat center;
+	background-size: cover;
+}
+.container1{
+	height: 80vh;
+	width: 80vw;
+	background: transparent;
+	position: absolute;
+	top: 10vh;
+	left: 10vw;
+	border: 2px groove;
+	border-radius: 20px;
+	backdrop-filter: blur(5px);
+/*	filter: blur(1px) drop-shadow(5px 5px);
+*/}
+.container3{
+	height: 80vh;
+	width: 80vw;
+	border: 2px groove #ffff00;
+	background: transparent;
+	position: absolute;
+	border-radius: 20px;
+	top: 10vh;
+	left: 10vw;
+	display: inline-flex;
+}
+.inner1{
+	justify-content: center;
+	width: 60%;
+	margin: 0px;
+	display: inline-flex;
+}
+.inner2{
+	width: 40%;
+	margin: 0px;
+	backdrop-filter: none;
+	background: #ffff00;
+	border-radius: 0px 20px 20px 0px;
+	display: inline-flex;
+}
+.inputbox{
+	font-size: 150%;
+	width: 100%;
+	background: none;
+	color: #ffffff;
+	display: block;
+	position: relative;
+	margin-top: 20px;
+}
+button{
+	font-family: Franklin Gothic medium, Impact;
+	font-size: 150%;
+	color: #ffffff;
+	width: 60%;
+	margin-left: 20%;
+	display: block;
+	border: 2px groove #ffff00;
+	background-color: transparent;
+	border-radius: 30px;
+	padding: 8px;
+	position: static;
+	margin-top: 20px;
+	transition: background-color 1s ease;
+}
+button:hover{
+	background-color: rgba(255, 255, 255, 0.4);
+}
+.inputbox label{
+	z-index: 1;
+	position: absolute;
+	width: 100%;
+	transform: translateY(-35px);
+	transition-property: transform, font-size;
+	transition-timing-function: ease;
+	transition-delay: 0s;
+	transition-duration: 0.5s;
+}
+.inputbox input{
+	z-index: 5;
+	position: relative;
+	font-size: 150%;
+	width: 100%;
+	color: #ffffff;
+	background: none;
+	border: none;
+	border-bottom: 2px solid #ffff00;
+}
+.inputbox input:focus+label{
+		transform: translateY(-65px);
+		font-size: 80%;
+}
+.inputbox input:valid+label{
+		transform: translateY(-65px);
+		font-size: 80%;
+}
+.inputbox input:focus{
+	outline: none;
+}
+h1{
+	font-family: Franklin Gothic medium, Impact;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 300%;
+	color: #ffffff;
+}
+form a{
+	color: #ffffff;
+	text-decoration: none;
+}
+.resetpass{
+	display: flex;
+	justify-content: space-between;
+	color: #ffffff;
+}
+form p{
+	text-align: center;
+	color: #ffffff;
+}
+p a{
+	text-decoration: underline;
+}
